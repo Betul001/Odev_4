@@ -2,9 +2,9 @@ version: '3.8'
 
 services:
   web:
-    build: ./ders5
-    command: python3 ornek.py -h 0.0.0.0
+    build: ./
+    command: python3 ders.py run -h 0.0.0.0
     volumes:
-      - ./ders5/:/usr/src/app/
+      - ./:/usr/src/app/
     ports:
-      - 5001:5000
+      - 5005:5005
